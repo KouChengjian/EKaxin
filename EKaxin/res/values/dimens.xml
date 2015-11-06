@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_init_height">48.0dip</dimen>
+    <dimen name="login_head_top">40dp</dimen>
+    <dimen name="login_head_bottom">40dp</dimen>
+    
+    
+    
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="base_action_bar_title_size">22.0sp</dimen>
+    
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="base_scrollview_top_height">50.0dip</dimen>
+    <dimen name="tab_padding_left_right">40dp</dimen>
+    <dimen name="base_line_width_1">1dip</dimen>
+    <dimen name="base_line_width_2">2dip</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    
+    
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    
+    <dimen name="page_margin">15dp</dimen>
+    
+    <dimen name="edit_card_select">5px</dimen>
+    
+    <dimen name="popmenu_width">80.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+    
+    <dimen name="ui_10_dip">10dip</dimen> 
+</resources>

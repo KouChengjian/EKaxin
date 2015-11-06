@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        android:layout_alignParentRight="true"
+        layout="@layout/include_action_bar" />
+
+    <LinearLayout
+        android:id="@+id/Layout_veri_showphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/verification_text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码已经发送至：12365896556"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_verifi_int"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/login_init_height"
+        android:layout_alignLeft="@+id/Layout_veri_showphone"
+        android:layout_below="@+id/Layout_veri_showphone"
+        android:background="@color/login_edit_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <View
+                android:id="@+id/phone_hint"
+                android:layout_width="2px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_select" />
+
+            <EditText
+                android:id="@+id/verification_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/phone_hint"
+                android:background="@null"
+                android:ems="9"
+                android:hint="请输入您的验证码"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:textSize="16sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_verification_show"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/Layout_verifi_int"
+        android:layout_alignRight="@+id/Layout_veri_showphone"
+        android:layout_alignTop="@+id/Layout_verifi_int"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Layout_verifi_int"
+        android:background="#8d99aa" >
+
+        <TextView
+            android:id="@+id/verification_text_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="重新获取(60)"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_verification_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:layout_alignLeft="@+id/Layout_verifi_int"
+        android:layout_alignRight="@+id/layout_verification_show"
+        android:layout_below="@+id/Layout_verifi_int"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/login_verification_next"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

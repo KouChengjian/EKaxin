@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ekaxin_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/common_actionbar"
+            layout="@layout/include_action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_actionbar"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/usersetting_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp" >
+
+                <ImageView
+                    android:id="@+id/usersetting_icon_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="#eeeeee"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/user_icon_default_main" />
+
+                <ImageView
+                    android:id="@+id/user_icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:src="@drawable/register_bottom_arrow" />
+
+                <RelativeLayout
+                    android:id="@+id/usersetting_icon_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/usersetting_icon_image"
+                    android:layout_toLeftOf="@+id/user_icon_more"
+                    android:layout_toRightOf="@+id/usersetting_icon_image"
+                    android:padding="4dip" >
+
+                    <TextView
+                        android:id="@+id/usersetting_icon_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dip"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/usersetting_icon_text_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usersetting_icon_text_name"
+                        android:padding="4dip"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="#18112a" 
+                />
+
+            <RelativeLayout
+                android:id="@+id/usersetting_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_search_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="允许被搜索"
+                    android:textColor="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/usersetting_search_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/selector_push_switch"
+                    android:checked="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/usersetting_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_remind_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="消息提醒"
+                    android:textColor="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/usersetting_remind_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/selector_push_switch"
+                    android:checked="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/usersetting_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_safety_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="设备锁"
+                    android:textColor="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/usersetting_safety_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/selector_push_switch"
+                    android:checked="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/usersetting_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_cache_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="清除缓存"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="#18112a" />
+
+            <RelativeLayout
+                android:id="@+id/usersetting_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_update_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="检查更新"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/usersetting_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_feedback_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="功能介绍"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/usersetting_growing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_growing_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="卡信成长"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#423b53" 
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/usersetting_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dip"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/usersetting_about_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="联系我们"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="#18112a" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

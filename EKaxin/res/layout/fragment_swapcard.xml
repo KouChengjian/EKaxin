@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ekaxin_background" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_swapcard_search"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/ll_swapcard_selector"
+        android:layout_below="@+id/common_actionbar" >
+
+        <RelativeLayout
+            android:id="@+id/rl_swapcard_search_switch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:paddingBottom="8dip"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dip">
+            <TextView
+                    android:id="@+id/usersetting_search_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="搜索开关"
+                    android:textColor="#ffffff" 
+                    android:textSize="10sp"/>
+
+                <CheckBox
+                    android:id="@+id/usersetting_search_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/usersetting_search_tips"
+                    android:button="@drawable/selector_swapcard_switch"
+                    android:checked="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_swapcard_search_star"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_swapcard_search_star"
+                    android:layout_width="100dp"
+                    android:layout_height="44dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_swap_star"
+                    android:gravity="center"
+                    android:text="开始"
+                    android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_swapcard_search_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_swapcard_search_switch" >
+
+            <ImageView
+                android:id="@+id/iv_recent_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/swap_card_selelctor_search" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_swapcard_selector_1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/ll_swapcard_selector_scan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_swap_card_selelctor_n"
+                android:drawableTop="@drawable/swap_card_selelctor_scan"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="15dip"
+                android:scaleType="matrix"
+                android:text="扫一扫"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/ll_swapcard_selector_kx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_swap_card_selelctor_p"
+                android:drawableTop="@drawable/swap_card_selelctor_kx"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="15dip"
+                android:scaleType="matrix"
+                android:text="卡信达人"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_swapcard_selector"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/ll_swapcard_selector_1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/ll_swapcard_selector_newfriend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_swap_card_selelctor_p"
+                android:drawableTop="@drawable/swap_card_selelctor_friend"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="15dip"
+                android:scaleType="matrix"
+                android:text="请求列表"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ll_swapcard_selector_newfriend_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/msg_tips"
+                android:contentDescription="@string/action_settings"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/ll_swapcard_selector_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_swap_card_selelctor_n"
+                android:drawableTop="@drawable/swap_card_selelctor_history"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="15dip"
+                android:scaleType="matrix"
+                android:text="历史"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

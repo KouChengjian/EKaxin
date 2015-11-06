@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ekaxin_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/common_actionbar"
+            layout="@layout/include_action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_actionbar"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#18112a" />
+
+            <RelativeLayout
+                android:id="@+id/user_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/user_icon_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/user_icon_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#eeeeee"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/user_icon_default_main" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#18112a" />
+
+            <RelativeLayout
+                android:id="@+id/user_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/user_nick_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="姓名"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/user_nick_text"
+                    style="@style/TextTheme.tipstheme_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="点击登录"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#18112a" />
+
+            <RelativeLayout
+                android:id="@+id/sex_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/sex_choice_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="性别"
+                    android:textColor="#ffffff" />
+
+                <CheckBox
+                    android:id="@+id/sex_choice_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/selector_sex_choice"
+                    android:checked="true"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#18112a" />
+
+            <RelativeLayout
+                android:id="@+id/user_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/user_sign_tips"
+                    style="@style/TextTheme.tipstheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="个性签名"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/user_sign_text"
+                    style="@style/TextTheme.tipstheme_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/user_sign_tips"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingBottom="8dip"
+                    android:paddingTop="8dip"
+                    android:text="点击填写" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#18112a" />
+
+            <TextView
+                android:id="@+id/user_logout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/selector_logout"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:paddingBottom="12dip"
+                android:paddingTop="12dip"
+                android:text="退出登录"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

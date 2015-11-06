@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lefe_menu_background"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/headImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:adjustViewBounds="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="20dp"
+            android:background="#ff1c1c1b" />
+
+        <RelativeLayout
+            android:id="@+id/layout_notification_indicator1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_left_fargment_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.0dip"
+                android:drawablePadding="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="编辑名片"
+                android:textColor="#ffccccc6"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lefe_menu_cardedit_fragment" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff1c1c1b" />
+
+        <RelativeLayout
+            android:id="@+id/layout_notification_indicator2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_left_fargment_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.0dip"
+                android:drawablePadding="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="名片收纳盒"
+                android:textColor="#ffccccc6"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lefe_menu_box_fragment" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff1c1c1b" />
+
+        <RelativeLayout
+            android:id="@+id/layout_notification_indicator3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_left_fargment_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.0dip"
+                android:drawablePadding="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="贺卡中心"
+                android:textColor="#ffccccc6"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_indicator3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lefe_menu_card_fragment" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff1c1c1b" />
+
+        <RelativeLayout
+            android:id="@+id/layout_notification_indicator4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_left_fargment_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.0dip"
+                android:drawablePadding="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="会员认证"
+                android:textColor="#ffccccc6"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_indicator4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lefe_menu_vip_fragment" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff1c1c1b" />
+
+        <RelativeLayout
+            android:id="@+id/layout_notification_indicator5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_left_fargment_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21.0dip"
+                android:drawablePadding="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="消息中心"
+                android:textColor="#ffccccc6"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_indicator5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/lefe_menu_message_fragment" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff1c1c1b" />
+    </LinearLayout>
+
+</ScrollView>

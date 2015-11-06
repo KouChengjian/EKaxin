@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+    
+    <RelativeLayout
+        android:id="@+id/loyout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="20dp" >
+         
+        <!--  android:background="@color/color_white"
+        <ImageView
+            android:id="@+id/imgtime"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+        </ImageView>
+        
+        <RelativeLayout
+            android:id="@+id/loyout_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgtime" >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="TextView" />
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView3" />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/loyout_timeseek"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/loyout_time" >
+            
+            <SeekBar
+                android:id="@+id/sb_detail_play_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball" />
+        </LinearLayout>
+        -->
+        
+        <RelativeLayout
+            android:id="@+id/loyout_date"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_above="@+id/view_0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" 
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="5dp">
+            
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/imgView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="TextView" 
+                android:gravity="center"/>
+
+            <com.chenghui.ekaxin.surface.DateSurface
+                android:id="@+id/date_surface"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/txt_date"
+                >
+            </com.chenghui.ekaxin.surface.DateSurface>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txt_date" />
+            
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/view_0"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#A6A6A6" 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/view_0"
+            android:layout_centerHorizontal="true"
+            android:background="#A6A6A6" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/view_1"
+            android:layout_toLeftOf="@+id/view_0"
+            android:gravity="center"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_1"
+            android:layout_toRightOf="@+id/view_0"
+            android:text="确定" 
+            android:gravity="center"/>
+
+        
+
+    </RelativeLayout>
+    
+</RelativeLayout>

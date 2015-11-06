@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:id="@+id/sv_all">
+
+    <LinearLayout
+        android:id="@+id/ll_editcard_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/common_actionbar"
+            layout="@layout/include_action_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/login_background"
+            android:clickable="true" 
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+            </RelativeLayout>
+
+            <com.chenghui.ekaxin.view.CircleImageView
+                android:id="@+id/card_redact_head_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/edit_card_photo" />
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:id="@+id/rl_editcard_item_chinese"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_chinese"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_chinese"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_chinese" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_chinese"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_chinese"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_english"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_double" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_english"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_double" >
+
+                <View
+                    android:id="@+id/v_editcard_select_english"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_english"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_english" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_english"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_english"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_phone"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_phone"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_phone" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_phone"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_phone"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_qq"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_double" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_double" >
+
+                <View
+                    android:id="@+id/v_editcard_select_qq"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_qq"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_qq" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_qq"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_qq"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_weixin"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_weixin"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_weixin" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_weixin"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_weixin"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_message"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_double" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_message"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_double" >
+
+                <View
+                    android:id="@+id/v_editcard_select_message"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_message"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_message" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_message"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_message"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_location"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_location"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_location"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_location"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/edit_card_location" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_location"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_location"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_department"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_double" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_department"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_double" >
+
+                <View
+                    android:id="@+id/v_editcard_select_department"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_department"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_department" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_department"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_department"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_gongsi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_gongsi"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_gongsi"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_gongsi"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_gongsi" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_gongsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_gongsi"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_gongsi"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_call"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_double" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_call"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_double" >
+
+                <View
+                    android:id="@+id/v_editcard_select_call"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_call"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_call" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_call"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_call"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_editcard_item_chuanzhen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/editcard_allrl_single" >
+
+            <RelativeLayout
+                android:id="@+id/rl_editcard_picture_chuanzhen"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/editcard_pic_single" >
+
+                <View
+                    android:id="@+id/v_editcard_select_chuanzhen"
+                    android:layout_width="@dimen/edit_card_select"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_select_p" />
+
+                <ImageView
+                    android:id="@+id/img_editcard_picture_chuanzhen"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/edit_card_chuanzhen" >
+                </ImageView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_editcard_content_chuanzhen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rl_editcard_picture_chuanzhen"
+                android:background="@null"
+                android:ems="9"
+                android:hint="@string/edie_card_chuanzhen"
+                android:textColor="#A8A8A8"
+                android:textSize="18sp">
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

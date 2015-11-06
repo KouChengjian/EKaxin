@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3b3649" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Button 
+            android:id="@+id/title_btn_left"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:background="#3b3649"/>
+
+        <Button
+            android:id="@+id/title_btn_left1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/title_btn_left"
+            android:layout_alignTop="@+id/common_constact"
+            android:background="@drawable/item3" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/title_btn_right"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="#3b3649" />
+
+        <LinearLayout
+            android:id="@+id/common_constact"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_left_right_title"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/constact_group"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/header_left_btn_select"
+                android:text="图片"
+                android:textColor="@drawable/header_left_right_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/constact_all"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/header_right_btn_select"
+                android:text="列表"
+                android:textColor="@drawable/header_left_right_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

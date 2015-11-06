@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ekaxin_background" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/common_actionbar"
+        android:background="@color/layout_background_color"
+        android:orientation="vertical" >
+
+        <!-- android:background="@color/base_bg" -->
+
+        <com.chenghui.ekaxin.view.SearchDevicesView
+            android:id="@+id/search_device_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </com.chenghui.ekaxin.view.SearchDevicesView>
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="57dp" />
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="97dp" />
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="49dp" />
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView4"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_marginBottom="14dp" />
+
+        <com.chenghui.ekaxin.view.CircleImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView4" />
+    </RelativeLayout>
+
+</RelativeLayout>

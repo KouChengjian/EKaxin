@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_memo_"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/common_actionbar" >
+
+        <TextView
+            android:id="@+id/tv_memo_examine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_memo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/et_memo_header_selecter"
+            android:hint="标题"
+            android:inputType="textMultiLine"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:textSize="22sp" >
+
+            <!-- <requestFocus /> -->
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_memo_option"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/rl_memo_" >
+
+        <LinearLayout
+            android:id="@+id/ll_memo_option"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_memo_grouping"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:text="分组:默认"
+                    android:textColor="#21242a"
+                    android:textSize="@dimen/text_size_large" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_memo_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="2014-6-17"
+                    android:textColor="#21242a"
+                    android:textSize="15sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_memo_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/rl_memo_option" >
+
+        <EditText
+            android:id="@+id/ed_memo_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/et_memo_header_selecter"
+            android:gravity="left|top"
+            android:hint="说说这段风景的故事吧"
+            android:inputType="textMultiLine"
+            android:minLines="9"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_memo_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_memo_clock"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#eaeaea"
+        android:layout_below="@+id/rl_memo_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_memo_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        android:layout_below="@+id/rl_memo_clock" >
+
+        <GridView
+            android:id="@+id/noScrollgridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

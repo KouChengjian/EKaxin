@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/statistic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_actionbar" >
+
+        <LinearLayout
+            android:id="@+id/statistic_layout_allinfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/statistic_layout_allinfo_exchange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_statistic_exchange_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="5508"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_statistic_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_statistic_exchange_num"
+                    android:gravity="center"
+                    android:text="交换量"
+                    android:textColor="@color/action_headerlayout" />
+
+                <View
+                    android:id="@+id/txt_statistic_exchange_view"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/action_headerlayout" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistic_layout_allinfo_collect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_statistic_collect_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="103"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_statistic_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_statistic_collect_num"
+                    android:gravity="center"
+                    android:text="收藏量"
+                    android:textColor="@color/action_headerlayout" />
+
+                <View
+                    android:id="@+id/txt_statistic_collect_view"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/action_headerlayout" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistic_layout_allinfo_attention"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txt_statistic_attention_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txt_statistic_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_statistic_attention_num"
+                    android:gravity="center"
+                    android:text="特别关注"
+                    android:textColor="@color/action_headerlayout" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/statistic_layout_week"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/statistic_layout_allinfo" >
+
+            <LinearLayout
+                android:id="@+id/statistic_layout_weekchoose"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistic_layout_weekpicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/statistic_layout_weekchoose" >
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

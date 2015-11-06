@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_init_height"
+        android:layout_below="@+id/common_actionbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/login_edit_background" >
+
+        <View
+            android:id="@+id/register_focus"
+            android:layout_width="4px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_select" />
+
+        <RelativeLayout
+            android:id="@+id/Layout_register_background_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_init_height"
+            android:layout_toRightOf="@+id/register_focus"
+            android:background="@color/login_edit_icon_background" >
+
+            <ImageView
+                android:id="@+id/imgbut_register_icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/register_icon" >
+            </ImageView>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/signup_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null" />
+
+        <EditText
+            android:id="@+id/edt_register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/signup_delete"
+            android:layout_toRightOf="@+id/Layout_register_background_icon"
+            android:background="@null"
+            android:ems="9"
+            android:hint="请输入您的手机号码"
+            android:inputType="number"
+            android:textColor="#A8A8A8"
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:layout_alignLeft="@+id/Layout_register_phone"
+        android:layout_alignRight="@+id/Layout_register_phone"
+        android:layout_below="@+id/Layout_register_phone"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/login_register_verification"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirm"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/confirm"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical" >
+
+        <!--
+        <CheckBox
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:button="@drawable/check_box_selector"
+            android:checked="true" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并接受"
+            android:textColor="#7a7a7a" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《卡信用户协议》"
+            android:textColor="#0053ff" />
+    </LinearLayout>
+
+</RelativeLayout>

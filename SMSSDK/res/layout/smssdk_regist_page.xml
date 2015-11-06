@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#21252b"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/smssdk_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/rl_country"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/smssdk_country"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#ff45c01a"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/smssdk_gray_press" 
+        android:visibility="gone"/>
+    
+    <RelativeLayout
+        android:id="@+id/Layout_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#4a5059" >
+
+        <View
+            android:id="@+id/register_focus"
+            android:layout_width="4px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ekaxin_edt_select" />
+
+        <RelativeLayout
+            android:id="@+id/Layout_register_background_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/register_focus"
+            android:background="#3a4147" >
+
+            <ImageView
+                android:id="@+id/imgbut_register_icon"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ekaxin_register_icon" >
+            </ImageView>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/signup_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null" />
+
+        <EditText
+            android:id="@+id/et_write_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/signup_delete"
+            android:layout_toRightOf="@+id/Layout_register_background_icon"
+            android:background="@null"
+            android:ems="9"
+            android:hint="请输入您的手机号码"
+            android:inputType="number"
+            android:textColor="#A8A8A8"
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/ekaxin_btn_login_selector"
+        android:text="@string/smssdk_next"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="22dp" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_country_num"
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/smssdk_input_bg_focus"
+            android:gravity="center"
+            android:textColor="#ff353535"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/smssdk_input_bg_special_focus" >
+
+            <EditText
+                android:id="@+id/et_write_phone1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/smssdk_write_mobile_phone"
+                android:inputType="phone"
+                android:textColor="#ff353535"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/smssdk_clear_search"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next1"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="24dip"
+        android:background="@drawable/smssdk_btn_disenable"
+        android:text="@string/smssdk_next"
+        android:textColor="#ffffff"
+        android:textSize="15sp" 
+        android:visibility="gone"/>
+
+</LinearLayout>

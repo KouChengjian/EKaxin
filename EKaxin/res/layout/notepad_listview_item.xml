@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/notes_alllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:id="@+id/notes_txtinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginLeft="15dp">
+            
+            <TextView
+                android:id="@+id/notes_titie"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#cbcaca"
+                android:textSize="30dp" 
+                />
+
+            <TextView
+                android:id="@+id/notes_time"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/notes_titie"
+                android:textColor="#cbcaca"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/notes_clock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/notes_time" />
+
+            <TextView
+                android:id="@+id/notes_id"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/notes_clock"
+                android:layout_marginLeft="37dp"
+                android:layout_toRightOf="@+id/notes_clock" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notes_picinfo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" 
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/notes_showpicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+        </RelativeLayout>
+
+	</RelativeLayout>
+    
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" 
+        android:layout_below="@+id/notes_alllayout">
+    </View>
+   
+</RelativeLayout>

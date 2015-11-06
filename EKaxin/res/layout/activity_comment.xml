@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7" >
+
+    <ScrollView
+        android:id="@+id/sv_commit_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <include
+                android:id="@+id/two_comment_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/include_comment_show" />
+
+            <View
+                android:id="@+id/v_comment_item"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"
+                android:layout_below="@id/two_comment_item" />
+
+            <ListView
+                android:id="@+id/lv_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_comment_item"
+                android:divider="@null" >
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/comment_operation_import"
+        layout="@layout/include_chat_bottom_bar" />
+    
+    <LinearLayout
+        android:id="@+id/two_area_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_comment_comment"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/two_finish"
+            style="@style/TextTheme.tipstheme_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="收起全部评论" />
+    </LinearLayout>
+
+</LinearLayout>

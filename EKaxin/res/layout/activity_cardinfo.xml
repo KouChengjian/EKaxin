@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_editcard"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/common_actionbar"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="@drawable/login_background">
+        
+        <RelativeLayout
+            android:id="@+id/rl_editcard_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" 
+            android:layout_marginTop="5dp" 
+            android:layout_marginLeft="16dp" 
+            android:layout_marginRight="16dp" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/card_redact_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit_card_photo" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_editcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_editcard" />
+    
+    <!-- android:hint="请输入别名" -->
+
+    <RelativeLayout
+        android:id="@+id/card_redact_totallayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/common_actionbar"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="@drawable/bcard_gd_zlpro_bg"
+        android:visibility="gone">
+        
+        <RelativeLayout
+            android:id="@+id/card_redact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" 
+            android:layout_marginTop="5dp" 
+            android:layout_marginLeft="16dp" 
+            android:layout_marginRight="16dp" >
+            <ImageView
+                android:id="@+id/card_redact_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/head" />
+            <RelativeLayout
+                android:id="@+id/card_redact_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/card_redact_head" >
+                <TextView
+                    android:id="@+id/card_redact_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="寇成坚   Kouchengjian" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/card_redact_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_redact_layout1"
+                android:layout_toRightOf="@+id/card_redact_head" >
+                <TextView
+                    android:id="@+id/card_redact_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="深圳市宸峯科技有限公司  " />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/card_redact_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_redact_layout2"
+                android:layout_toRightOf="@+id/card_redact_head" >
+                <TextView
+                    android:id="@+id/card_redact_duty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="开发     Android程序员" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_totallayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp" 
+        android:clickable="true"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="电话号码" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text" >
+
+            <TextView
+                android:id="@+id/card_redact_num"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add"
+                android:text="187140627436" 
+                android:gravity="center_vertical|left"/>
+
+            <ImageView
+                android:id="@+id/card_redact_add"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" 
+                android:layout_gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone" >
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text2"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="办公电话" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text2" >
+
+            <TextView
+                android:id="@+id/card_redact_num2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add2"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add2"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text3"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="办公传真" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text3" >
+
+            <TextView
+                android:id="@+id/card_redact_num3"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add3"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add3"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp" 
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text4"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="电子邮件" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text4" >
+
+            <TextView
+                android:id="@+id/card_redact_num4"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add4"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add4"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone"> 
+         
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text5"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="电子邮件" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text5" >
+
+            <TextView
+                android:id="@+id/card_redact_num5"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add5"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add5"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text6"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="电子邮件" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text6" >
+
+            <TextView
+                android:id="@+id/card_redact_num6"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add6"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add6"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp" 
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text7"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="个人网址" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text7" >
+
+            <TextView
+                android:id="@+id/card_redact_num7"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add7"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add7"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_redact_info7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text8"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="邮政编码"
+                android:gravity="center" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text8" >
+
+            <TextView
+                android:id="@+id/card_redact_num8"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add8"
+                android:gravity="center_vertical|left"
+                android:text="187140627436" />
+
+            <ImageView
+                android:id="@+id/card_redact_add8"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/card_redact_info9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_redact_info8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" 
+        android:background="@drawable/about_top_bg"
+        android:padding="8dp"
+        android:visibility="gone">  
+        <RelativeLayout
+            android:id="@+id/card_redact_layout_text9"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+            <TextView
+                android:id="@+id/card_redact_text9"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:text="公司地址" 
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/card_redact_layout_text9" >
+
+            <TextView
+                android:id="@+id/card_redact_num9"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/card_redact_add9"
+                android:gravity="center_vertical|left"
+                android:text="U树的房间看看的骄傲是快乐的骄傲是快乐到家阿斯顿按岁数卡接收到" />
+
+            <ImageView
+                android:id="@+id/card_redact_add9"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:src="@drawable/register_bottom_arrow"
+                android:layout_alignParentRight="true"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

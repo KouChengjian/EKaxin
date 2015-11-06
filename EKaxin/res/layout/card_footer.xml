@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/card_footer_layoutall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" 
+        android:background="#00000000">
+        
+        <RelativeLayout
+            android:id="@+id/card_footer_company"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:background="#00000000"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/card_footer_company_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="宸峯科技" 
+                android:textSize="25dp" 
+                android:background="#00000000"/>
+            <!-- android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" -->
+        </RelativeLayout>
+        
+       <RelativeLayout
+            android:id="@+id/card_footer_duty"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#00000000"
+            android:layout_below="@+id/card_footer_company"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/card_footer_duty_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" 
+                android:background="#00000000"/>
+            <!-- android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" -->
+        </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                 android:layout_below="@+id/card_footer_duty"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout1_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout1_img"
+                    android:text="内容1" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout1_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout1"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout2_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout2_img"
+                    android:text="内容" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout2_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout2"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout3_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout3_img"
+                    android:text="内容" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout3_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout3"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout4_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout4_img"
+                    android:text="内容"
+                    android:background="#00000000" />
+                
+                <TextView
+                    android:id="@+id/card_footer_layout4_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout5"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout4"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout5_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout5_img"
+                    android:text="内容"
+                    android:background="#00000000" />
+                
+                <TextView
+                    android:id="@+id/card_footer_layout5_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout6"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout5"
+                android:background="#00000000">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout6_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout6_img"
+                    android:text="内容" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout6_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout7"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout6"
+                android:background="#00000000"
+                android:visibility="gone">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout7_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout7_img"
+                    android:text="内容" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout7_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/card_footer_layout8"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card_footer_layout7"
+                android:background="#00000000"
+                android:visibility="gone">
+                
+                <TextView
+                    android:id="@+id/card_footer_layout8_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"                    
+                    android:layout_toRightOf="@+id/card_footer_layout8_img"
+                    android:text="内容" 
+                    android:background="#00000000"/>
+                
+                <TextView
+                    android:id="@+id/card_footer_layout8_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="图片" 
+                    android:background="#00000000"/>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+
+</RelativeLayout>

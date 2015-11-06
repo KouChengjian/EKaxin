@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension"  />
+        <attr name="topOffset" format="dimension"  />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled1" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+
+    <!-- 统计 -->
+    <declare-styleable name="FlipViewController">
+		<attr name="orientation" format="enum">
+			<enum name="vertical" value="0"/>
+			<enum name="horizontal" value="1"/>
+		</attr>
+
+		<attr name="animationBitmapFormat" format="enum">
+			<enum name="ARGB_8888" value="0"/>
+			<enum name="ARGB_4444" value="1"/>
+			<enum name="RGB_565" value="2"/>
+		</attr>
+	</declare-styleable>
+    
+    <declare-styleable name="CircleProgressBar">  
+        <attr name="max" format="integer"/>				<!-- 进度条最大值 -->
+        <attr name="fill" format="boolean"/>			<!-- 是否填充圆形区域 -->
+        <attr name="Paint_Width" format="integer"/>		<!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="Paint_Color" format="integer"/>		<!-- 画笔颜色 -->
+        <attr name="Inside_Interval" format="integer"/> <!-- 圆形区域向里缩进的距离 --> 
+    </declare-styleable>  
+    
+</resources>

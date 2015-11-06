@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 登入 注册  -->
+    <color name="layout_background_color">#21252b</color>
+    <color name="login_edit_background">#4a5059</color>
+    <color name="login_edit_icon_background">#3a4147</color>
+    <color name="login_btn_d">#0056ff</color>
+    <color name="login_btn_u">#0066cc</color>
+    <color name="login_edit_textcolor">#8d99aa</color>
+    <color name="login_verif_btn_again">#8d99aa</color>
+    
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <color name="base_bg">#f4f6f6</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="color_theme">#489cfa</color>
+    <color name="guide_color">#cac7d1</color>
+    <color name="color_bottom_text_press">#895fe7</color>
+    <color name="color_bottom_text_normal">#ffffff</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_bottom_move">#336699</color> 
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    
+    <!-- 公共 -->
+    <color name="action_headerlayout">#3b3649</color>
+    <color name="blue">#499BF7</color>
+    <color name="whites">#ffffff</color>
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="theme_color">#D95555</color>
+    
+    <!-- 代码 -->
+    <color name="verification_time_show">#0056ff</color>
+    <color name="verification_time_hint">#8d99aa</color>
+    
+    <!-- 名片编辑颜色 -->
+    <color name="editcard_allrl_single">#f0f1f6</color>
+    <color name="editcard_pic_single">#e1e5ee</color>
+    <color name="editcard_allrl_double">#ffffff</color>
+    <color name="editcard_pic_double">#f0f1f6</color>
+    
+    <color name="none_color">#00000000</color>
+    
+</resources>
